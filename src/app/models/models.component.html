@@ -1,0 +1,30 @@
+<p>Models:</p>
+
+
+<select>
+    <option *ngFor="let year of years">{{year}}</option>
+</select>  
+
+<select>
+        <option *ngFor="let make of makes">{{make}}</option>
+</select>
+
+<table>
+    <tr>
+        <td>Make</td>
+        <td>Year</td>
+        <td>Model</td>
+    </tr>
+    <tr *ngFor="let model of models">{{models}}>
+       
+    </tr>
+
+</table>
+
+
+<table>
+    <button mat-icon-button class= "pPageArrow" (click)="pPage()">
+    </button>
+    <button mat-icon-button class="nPageArrow" (click)="nPage()">
+    </button>
+</table>
