@@ -15,8 +15,10 @@
         <td>Year</td>
         <td>Model</td>
     </tr>
-    <tr *ngFor="let model of models">{{models}}>
-       
+    <tr *ngFor="let model of models">
+        <td>{{model.make}}</td>
+        <td>{{model.year}}</td>
+        <td>{{model.model}}</td>
     </tr>
 
 </table>
